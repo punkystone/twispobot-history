@@ -1,0 +1,10 @@
+services:
+  frontend:
+    container_name: twispobot-history-frontend
+    ports:
+      - 8080:80
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.dev
+    volumes:
+      - ./frontend:/build
